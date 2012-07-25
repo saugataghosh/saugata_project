@@ -2,12 +2,17 @@
 <style>
 #logo{
 float:left;
+border:15px ridge aquamarine;
+margin-right:200px;
 }
 #title{
 float:left;
+background-color:greenyellow;
+border:2px double blue;
+padding:5px;
 }
 
-#clearfix{
+.clearfix{
 content=".";
 display:block;
 clear:both;
@@ -17,7 +22,7 @@ visibility:hidden;
 #div1{
 padding:10px;
 margin:10px;
-border-bottom:1px solid black;
+background-color:khaki;
 }
 </style>
 <head>
@@ -28,5 +33,5 @@ border-bottom:1px solid black;
 <img id="logo" src="/images/logo.png" width="138" height="74" alt="logo"/>
 <h1 id="title"><em>RAILS IMPLEMENT<em></h1>
 </div>
-<div id="clearfix"></div> 
+<div class="clearfix"></div> 
 </body>
