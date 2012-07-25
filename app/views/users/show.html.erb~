@@ -1,0 +1,45 @@
+<h1>User#SHOW</h1>
+<label>Name:</label>
+<%= @user.username %>
+<br>
+<label>email:</label>
+<%= @user.email %>
+<br>
+<label>firstname:</label> 
+<%= @user.f_name %>
+<br>
+<label>lastname:</label> 
+<%= @user.l_name %>
+<br><label>ContactNumber:</label> 
+<%= @user.Contact_no %>
+<br>
+<label>UserType:</label> 
+<%= @user.User_type %>
+<br>
+<label>fullname:</label> 
+<%= @user.full_name %>
+<%= link_to "index", users_path %>
+<br>
+<%= link_to "create post", new_user_post_path(@user) %> 
+<head>
+<style>
+#post{
+border:1px solid black;
+margin:70px;
+}
+</style>
+</head>
+<body>
+<div id="post">
+<% @posts=@user.posts %>
+<ul>
+<% @posts.each do|post| %>
+<li>
+<%= link_to post.title, user_post_path(@user,post) %>
+<%= link_to "show", user_post_path(@user,post) %>
+<%= link_to "delete post", user_post_path(@user,post), :method=>:delete %>
+</li>
+<% end %>
+</ul>
+<div>
+</body>

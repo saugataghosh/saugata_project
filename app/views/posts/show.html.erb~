@@ -1,0 +1,9 @@
+<h1>Showing posts..</h1>
+
+<label>Title:</label>
+<%= @post.title %>
+<br>
+<label>Description:</label>
+<%= @post.description %>
+<br>
+<%= link_to "Users show page", user_path(@user) %>

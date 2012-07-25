@@ -1,0 +1,32 @@
+<head>
+<style>
+#logo{
+float:left;
+}
+#title{
+float:left;
+}
+
+#clearfix{
+content=".";
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+}
+#div1{
+padding:10px;
+margin:10px;
+border-bottom:1px solid black;
+}
+</style>
+<head>
+
+
+<body>
+<div id="div1">
+<img id="logo" src="/images/logo.png" width="138" height="74" alt="logo"/>
+<h1 id="title"><em>RAILS IMPLEMENT<em></h1>
+</div>
+<div id="clearfix"></div> 
+</body>

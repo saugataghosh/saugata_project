@@ -1,0 +1,25 @@
+<%= form_for @users do|i| %>
+<%= i.label :username %>
+<%= i.text_field :username %>
+<br>
+<%= i.label :email %>
+<%= i.text_field :email %>
+<br>
+<%= i.label :firstname %>
+<%= i.text_field :f_name %>
+<br>
+<%= i.label :lastname %>
+<%= i.text_field :l_name %>
+<br>
+<%= i.label :ContactNumber %>
+<%= i.text_field :Contact_no %>
+<br>
+<%= i.label :UserType %>
+<%= i.text_field :User_type %>
+<br>
+<%= i.label :FullName %>
+<%= i.text_field :full_name %>
+<br>
+<%= i.submit %>
+<% end %>
+
